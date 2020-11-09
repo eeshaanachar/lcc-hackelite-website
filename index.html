@@ -29,7 +29,7 @@
             }
         </script>
 
-        <title>Hack-Elite 2019</title>
+        <title>Hack-Elite 2020</title>
         <link rel="icon" type="image/JPG" href="img/hack-logo.JPG" />
         <!-- For apple devices -->
         <link
@@ -78,22 +78,17 @@
         />
 
         <link href="css/agency.css" rel="stylesheet" />
-        <link href="css/style-layout.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
     </head>
 
     <body id="page-top" onload="motion()" onscroll="motion()">
         <!-- Navigation -->
-
         <nav
-            style="max-width: 100%"
-            class="navbar navbar-expand-lg navbar-dark fixed-top"
+            class="navbar navbar-expand-xl navbar-dark fixed-top"
             id="mainNav"
+            style="background-color: #181818"
         >
-            <div
-                class="container"
-                style="max-width: 100%; padding-top: 3px; padding-bottom: 5px"
-            >
-                <div id="titlesponsor"></div>
+            <div class="container">
                 <button
                     class="navbar-toggler navbar-toggler-right"
                     type="button"
@@ -102,17 +97,48 @@
                     aria-controls="navbarResponsive"
                     aria-expanded="false"
                     aria-label="Toggle navigation"
-                    style="background: #fcb603; color: white"
+                    style="
+                        color: white;
+                        background-color: transparent;
+                        font-size: 1.5rem;
+                    "
                 >
-                    MENU
                     <i class="fas fa-bars"></i>
                 </button>
+
+                <a
+                    href="https://lccjssstu.org/"
+                    target="_blank"
+                    class="navbar-brand mr-0"
+                    style="font-family: 'Lobster', cursive"
+                >
+                    <img
+                        src="img/lcc_logo_new_1.png"
+                        alt="LCC Logo"
+                        style="
+                            height: 3rem;
+                            width: 3rem;
+                            object-fit: contain;
+                            padding: 0.25rem;
+                            background-color: white;
+                            border-radius: 50%;
+                        "
+                    />
+                    LCC
+                </a>
 
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul
                         class="navbar-nav text-uppercase"
-                        style="margin-right: 0px"
+                        style="margin-left: auto"
                     >
+                        <li class="nav-item">
+                            <a
+                                class="nav-link js-scroll-trigger"
+                                href="#sponsors"
+                                >Sponsors</a
+                            >
+                        </li>
                         <li class="nav-item">
                             <a
                                 class="nav-link js-scroll-trigger"
@@ -129,11 +155,6 @@
                             >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#about"
-                                >Schedule</a
-                            >
-                        </li>
-                        <li class="nav-item">
                             <a
                                 class="nav-link js-scroll-trigger"
                                 href="#pricing"
@@ -141,15 +162,13 @@
                             >
                         </li>
                         <li class="nav-item">
-                            <a
-                                class="nav-link js-scroll-trigger"
-                                href="#sponsors"
-                                >Sponsors</a
+                            <a class="nav-link js-scroll-trigger" href="#about"
+                                >Schedule</a
                             >
                         </li>
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger" href="#guid"
-                                >GUIDELINES</a
+                                >Guidelines</a
                             >
                         </li>
                         <li class="nav-item">
@@ -160,8 +179,11 @@
                             >
                         </li>
 
-                        <div class="dropdown">
-                            <div class="dropbtn" style="color: white">
+                        <li class="nav-item dropdown">
+                            <div
+                                class="dropbtn dropdown-toggle"
+                                style="color: white; font-size: 0.9rem"
+                            >
                                 Support
                             </div>
                             <div class="dropdown-content">
@@ -171,20 +193,20 @@
                                     >FAQ's</a
                                 >
                             </div>
-                        </div>
+                        </li>
                     </ul>
                 </div>
 
                 <div id="register">
-                    <button
-                        onclick="window.location.href = 'https://hackelite.hackerearth.com/';"
-                        style="height: 5vw"
+                    <a
+                        href="https://hackelite.hackerearth.com/"
+                        class="btn btn-success"
+                        target="_blank"
+                        style="border-radius: 16px"
                     >
-                        <div style="font-size: 2.75vw">REGISTER</div>
-                    </button>
+                        REGISTER
+                    </a>
                 </div>
-                <div id="college"></div>
-                <div id="lccsponsor"></div>
             </div>
         </nav>
 
@@ -229,12 +251,14 @@
                                 stroke: #1e96da;
                                 stroke-miterlimit: 10;
                             }
+
                             .st1 {
                                 fill: none;
                                 stroke: #1e96da;
                                 stroke-linecap: round;
                                 stroke-miterlimit: 10;
                             }
+
                             .bg1 {
                                 background-image: url(face.png);
                                 fill: "img/face.png";
@@ -3777,7 +3801,12 @@
                 <!-- </svg> -->
             </div>
             <div class="reg-btn">
-                <a href="#" class="btn">Register Now</a>
+                <a
+                    href="https://hackelite.hackerearth.com/"
+                    class="btn btn-success"
+                    target="_blank"
+                    >Register Now</a
+                >
             </div>
         </header>
 
@@ -4032,7 +4061,9 @@
                             <b>I PRIZE</b>
                         </li>
                         <li class="w3-padding-16">
-                            <b><h2>INR 75,000</h2></b>
+                            <b>
+                                <h2>INR 75,000</h2>
+                            </b>
                         </li>
                         <li class="w3-padding-16">
                             <b>Trophy + Internship</b>
@@ -4081,7 +4112,9 @@
                             <b>II PRIZE</b>
                         </li>
                         <li class="w3-padding-16">
-                            <b><h2>INR 50,000</h2></b>
+                            <b>
+                                <h2>INR 50,000</h2>
+                            </b>
                         </li>
                         <li class="w3-padding-16">
                             <b>Trophy + Internship</b>
@@ -4472,8 +4505,11 @@
                                 <a
                                     style="color: #000080; font-size: 150%"
                                     href="https://drive.google.com/open?id=1-JXKprs43z1xL1jn3TDestRmgMvmzUXS"
-                                    ><center><h3>FAQ's</h3></center></a
                                 >
+                                    <center>
+                                        <h3>FAQ's</h3>
+                                    </center>
+                                </a>
                             </td>
                             <div style="line-height: 15%"><br /></div>
                         </h2>
@@ -4618,8 +4654,11 @@
             <a
                 style="color: black"
                 href="https://drive.google.com/open?id=13YRjDzrFu28G9fGGQqGfxsW_YC3mvJvS"
-                ><center><h3>FAQ's</h3></center></a
             >
+                <center>
+                    <h3>FAQ's</h3>
+                </center>
+            </a>
         </td>
         <br />
 
@@ -4653,7 +4692,7 @@
                 /></a>
             </div>
             <div>
-                <p class="w3-hover-text-yellow">Copyright Lccjssstu 2019</p>
+                <p class="w3-hover-text-yellow">Copyright Lccjssstu 2020</p>
             </div>
         </footer>
 
