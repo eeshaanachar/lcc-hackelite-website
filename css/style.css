@@ -6,6 +6,7 @@ header .reg-btn {
 }
 
 header .reg-btn a {
+  color: white;
   text-transform: uppercase;
   font-size: 1.75rem;
   padding: 0.25rem 2rem;
@@ -16,9 +17,9 @@ header .reg-btn a {
 }
 
 header .reg-btn a:hover {
-  border-color: green;
+  border-color: #ffc107;
   background-color: white;
-  color: green;
+  color: #ffc107;
 }
 
 #sponsors {
